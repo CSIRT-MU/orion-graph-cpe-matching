@@ -1,0 +1,135 @@
+{
+  "cve": {
+    "data_type": "CVE",
+    "data_format": "MITRE",
+    "data_version": "4.0",
+    "CVE_data_meta": {
+      "ID": "CVE-0000-0001",
+      "ASSIGNER": "cve@mitre.org"
+    },
+    "problemtype": {
+      "problemtype_data": [
+        {
+          "description": [
+            {
+              "lang": "en",
+              "value": "CWE-617"
+            }
+          ]
+        }
+      ]
+    },
+    "references": {
+      "reference_data": [
+        {
+          "url": "http://www.securityfocus.com/bid/106544",
+          "name": "106544",
+          "refsource": "BID",
+          "tags": [
+            "Third Party Advisory",
+            "VDB Entry"
+          ]
+        },
+        {
+          "url": "https://kb.juniper.net/JSA10902",
+          "name": "https://kb.juniper.net/JSA10902",
+          "refsource": "CONFIRM",
+          "tags": [
+            "Vendor Advisory"
+          ]
+        }
+      ]
+    },
+    "description": {
+      "description_data": [
+        {
+          "lang": "en",
+          "value": "When a specific BGP flowspec configuration is enabled and upon receipt of a specific matching BGP packet meeting a specific term in the flowspec configuration, a reachable assertion failure occurs, causing the routing protocol daemon (rpd) process to crash with a core file being generated. Affected releases are Juniper Networks Junos OS: 12.1X46 versions prior to 12.1X46-D77 on SRX Series; 12.3 versions prior to 12.3R12-S10; 12.3X48 versions prior to 12.3X48-D70 on SRX Series; 14.1X53 versions prior to 14.1X53-D47 on EX2200/VC, EX3200, EX3300/VC, EX4200, EX4300, EX4550/VC, EX4600, EX6200, EX8200/VC (XRE), QFX3500, QFX3600, QFX5100; 15.1 versions prior to 15.1R3; 15.1F versions prior to 15.1F3; 15.1X49 versions prior to 15.1X49-D140 on SRX Series; 15.1X53 versions prior to 15.1X53-D59 on EX2300/EX3400."
+        }
+      ]
+    }
+  },
+  "configurations": {
+    "CVE_data_version": "4.0",
+    "nodes": [
+      {
+        "operator": "AND",
+        "children": [
+          {
+            "operator": "OR",
+            "negate": true,
+            "cpe_match": [
+              {
+                "vulnerable": true,
+                "cpe23Uri": "cpe:2.3:o:juniper:junos:12.1x46:*:*:*:*:*:*:*"
+              }
+            ]
+          },
+          {
+            "operator": "OR",
+            "negate": true,
+            "cpe_match": [
+              {
+                "vulnerable": false,
+                "cpe23Uri": "cpe:2.3:h:juniper:srx100:-:*:*:*:*:*:*:*"
+              }
+            ]
+          },
+          {
+            "operator": "OR",
+            "negate": true,
+            "cpe_match": [
+              {
+                "vulnerable": true,
+                "cpe23Uri": "cpe:2.3:o:juniper:junos:12.3:*:*:*:*:*:*:*"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "impact": {
+    "baseMetricV3": {
+      "cvssV3": {
+        "version": "3.1",
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "attackVector": "NETWORK",
+        "attackComplexity": "HIGH",
+        "privilegesRequired": "NONE",
+        "userInteraction": "NONE",
+        "scope": "UNCHANGED",
+        "confidentialityImpact": "NONE",
+        "integrityImpact": "NONE",
+        "availabilityImpact": "HIGH",
+        "baseScore": 5.9,
+        "baseSeverity": "MEDIUM"
+      },
+      "exploitabilityScore": 2.2,
+      "impactScore": 3.6
+    },
+    "baseMetricV2": {
+      "cvssV2": {
+        "version": "2.0",
+        "vectorString": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+        "accessVector": "NETWORK",
+        "accessComplexity": "MEDIUM",
+        "authentication": "NONE",
+        "confidentialityImpact": "NONE",
+        "integrityImpact": "NONE",
+        "availabilityImpact": "PARTIAL",
+        "baseScore": 4.3
+      },
+      "severity": "MEDIUM",
+      "exploitabilityScore": 8.6,
+      "impactScore": 2.9,
+      "acInsufInfo": false,
+      "obtainAllPrivilege": false,
+      "obtainUserPrivilege": false,
+      "obtainOtherPrivilege": false,
+      "userInteractionRequired": false
+    }
+  },
+  "publishedDate": "2019-01-15T21:29Z",
+  "lastModifiedDate": "2020-09-29T01:49Z"
+}

@@ -1,0 +1,10 @@
+{
+  "operator": "OR",
+  "negate": true,
+  "cpe_match": [
+    {
+      "vulnerable": true,
+      "cpe23Uri": "cpe:2.3:a:troglobit:pimd:2.1.5:*:*:*:*:*:*:*"
+    }
+  ]
+}

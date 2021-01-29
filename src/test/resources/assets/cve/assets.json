@@ -1,0 +1,32 @@
+[
+  {
+    "uuid": "a84fa9de-de42-443f-87b2-0d892ecdb8f5",
+    "name": "windows-10-server-room",
+    "cpe23fs": "cpe:2.3:o:microsoft:windows_10:1709:*:*:*:*:*:x64:*",
+    "parentUuid": null
+  },
+  {
+    "uuid": "6f66140f-4979-41a7-b067-73860dbddc39",
+    "name": "firefox-browser-80.0",
+    "cpe23fs": "cpe:2.3:a:mozilla:firefox:80.0:*:*:*:*:android:*:*",
+    "parentUuid": null
+  },
+  {
+    "uuid": "131b6b1c-3ba9-11eb-adc1-0242ac120002",
+    "name": "node-tar-3.1.2",
+    "cpe23fs": "cpe:2.3:a:node-tar_project:node-tar:3.1.2:*:*:*:*:*:*:*",
+    "parentUuid": null
+  },
+  {
+    "uuid": "33336b1c-0000-0000-adc1-7777ac120000",
+    "name": "elasticsearch-db-1.3.7",
+    "cpe23fs": "cpe:2.3:a:elasticsearch:elasticsearch:1.3.7:*:*:*:*:*:*:*",
+    "parentUuid": null
+  },
+  {
+    "uuid": "1311111c-0000-11eb-adc1-5555ac120002",
+    "name": "node-tar-2.1.0",
+    "cpe23fs": "cpe:2.3:a:node-tar_project:node-tar:2.1.0:*:*:*:*:*:*:*",
+    "parentUuid": "a84fa9de-de42-443f-87b2-0d892ecdb8f5"
+  }
+]
