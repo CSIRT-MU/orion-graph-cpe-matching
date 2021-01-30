@@ -28,7 +28,7 @@ OR
 * `cz.muni.csirt.nvd.cpe.transform.statement.StatementUtil` implements the conversion of applicability statements to CNF.
 * `cz.muni.csirt.nvd.cpe.transform.wfn.StringRangeUtil` implements support for version ranges for NVD-extended CPE names.
 
-### `src/main/java`
+### `src/test/java`
 
 * `cz.muni.csirt.matching.CVEGraphMatchingTest` executes tests for TinkerGraph.
 * `cz.muni.csirt.matching.CVEJanusGraphMatchingTest` executes tests for JanusGraph.
